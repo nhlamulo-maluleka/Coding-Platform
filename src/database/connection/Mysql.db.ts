@@ -38,6 +38,7 @@ export class MySQL {
             (err: MysqlError, connection: PoolConnection) => {
                 if (err) {
                     callback(err.message);
+                    
                 }
                 else {
                     this.DBConnection = connection;
